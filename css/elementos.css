@@ -1,0 +1,29 @@
+
+h3 {   
+    font-style: inherit;
+    color: rgb(124, 124, 124);
+}
+
+
+select {
+    color: rgb(124, 124, 124);
+    background: white;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+      border: 2px solid rgb(124, 124, 124);
+
+}
+
+select:hover{ 
+    background-color: rgb(238, 238, 238);
+  
+}
+
+
+label {
+    color: rgb(124, 124, 124);
+    font-size: 20px;
+}
+

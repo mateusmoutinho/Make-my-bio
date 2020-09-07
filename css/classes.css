@@ -1,0 +1,83 @@
+
+.numero{
+    color: rgb(124, 124, 124);
+    font-size: 20px;
+    font-style: inherit;
+    width: 50px;
+    height: 40px;
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 5px;
+}
+.numero:hover{ 
+    background-color: rgb(238, 238, 238);
+  
+}
+
+.entrada { 
+    color: rgb(124, 124, 124);
+    font-size: 20px;
+    font-style: inherit;
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 5px;
+}
+.entrada:hover{ 
+    background-color: rgb(238, 238, 238);
+  
+}
+
+.botao_cria {
+    background-color:rgb(138, 138, 255);
+    color: white;
+    font-style: inherit;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 0px;
+    margin-right: 100px;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+}
+.botao_cria:hover {
+ background-color:rgb(176, 115, 255);
+}
+.botao_elimina{
+
+ color: rgb(238, 112, 250);
+ background-color: white;
+ border: 0px;
+ font-style: inherit;
+ font-size: 20px;
+ margin-left: 200px;
+
+ margin-top: 10px;
+}
+.botao_elimina:hover{
+
+ color: rgb(245, 0, 212);
+
+}
+
+.botao_elimina_de_numero{
+
+ color: rgb(238, 112, 250);
+ background-color: white;
+ border: 0px;
+ font-style: inherit;
+ font-size: 20px;
+ margin-left: 50px;
+
+ margin-top: 10px;
+}
+.botao_elimina_de_numero:hover{
+
+ color: rgb(245, 0, 212);
+
+}
+
+.checkbox {
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}

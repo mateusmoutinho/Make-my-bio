@@ -1,0 +1,39 @@
+
+#inicial{
+  
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(176, 115, 255);
+    font-style: inherit;
+
+}
+#perguntas {
+margin: 0 auto;
+text-align: center;
+}   
+
+#botao_gerar_texto{
+     background-color:rgb(110, 185, 173);
+     color: white;
+     font-style: inherit;
+     font-size: 25px;
+     border-radius: 5px;
+     border: 0px;
+     margin-right: 100px;
+     width: 300px;
+     height: 40px;
+     margin-top: 20px;
+}
+
+#botao_gerar_texto:hover{
+    background-color:rgb(52, 163, 145);
+   
+}
+#final{
+    position: relative;
+    margin-top: -400px;
+    margin-right: 50px;
+    width: 400px;
+    height: 200px;
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/id.css">
+    <link rel="stylesheet" type="text/css" href="css/classes.css">
+    <link rel="stylesheet" type="text/css" href="css/elementos.css">
+    <title>Make My Bio</title>
+    <script src="interface/globais.js"></script>
+    <script src="interface/classes.js"></script>
+    <script src="interface/demais.js"></script>
+    <script src="interface/hobbies.js"></script>
+    <script src="interface/construtoras.js"></script>
+</head>
+<body>
+      <div id="inicial">
+        <h1>Make my Bio</h1>
+      </div>
+   
+     <div id="perguntas"> 
+
+          <h3>Qual o seu nome ?</h3>
+          <input id="nome" class="entrada">
+           
+          <div id="idade">
+             
+            <button onclick="adiciona_idade()" class="botao_cria"> Adicionar Idade</button>
+            
+          </div>
+
+           <div id="profissao">
+                <button  id="botao_de_profissao" onclick="adiciona_profissao()" class="botao_cria"> Adicionar Profissão</button>
+          </div>
+
+          <div   id="religiao">
+            <button onclick="adiciona_religiao()" class="botao_cria"> Adicionar Religião</button>
+          </div>
+
+          <div id=hobbies>        
+               <button  id="botao_de_hobbies" onclick="adiciona_robbie()" class="botao_cria"> Adicionar Hobbie</button>
+         </div> 
+         <div>        
+
+          <button  id="botao_gerar_texto"> Gerar Texto</button>
+          
+         </div>
+
+        
+         <br>
+         <div id="final"  style="visibility: hidden"> 
+         <h2>Texto Gerado: </h2>
+         <h3 id="texto_final"></h3>
+         </div>
+ 
+         
+
+
+     </div>
+     
+</body>
+      <script src="engine/principal.js"></script>
+
+</html>
