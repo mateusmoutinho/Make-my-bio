@@ -1,0 +1,1 @@
+a single web aplication to generate bio text base on a simple A.I text engine
