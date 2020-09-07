@@ -6,7 +6,7 @@ const cria_propriedas_de_futebol = div =>{
     cria_pergunta(div, "O quão fanático pelo seu time você é ?")
  
     const taxa_de_gosto = []
-    taxa_de_gosto.push("Um pouco, não sou muito fan de futebol")
+    taxa_de_gosto.push("Um pouco, não sou muito fã de futebol")
     taxa_de_gosto.push("Mais ou menos, acompanho os jogos")
     taxa_de_gosto.push("Muito, vou ao estádio direto")
     
@@ -21,10 +21,10 @@ const  cria_propriedas_de_cinema = div =>{
 
     elementos_da_checkbox.push(new Elementos_da_checkbox("comedia","Comédia"))
     elementos_da_checkbox.push(new Elementos_da_checkbox("romance","Romance"))
-    elementos_da_checkbox.push(new Elementos_da_checkbox("ficao","Fição Científica"))
+    elementos_da_checkbox.push(new Elementos_da_checkbox("ficao","Ficção Científica"))
     elementos_da_checkbox.push(new Elementos_da_checkbox("acao","Ação"))
     elementos_da_checkbox.push(new Elementos_da_checkbox("aventura","aventura"))
-    elementos_da_checkbox.push(new Elementos_da_checkbox("documentarios","Documentarios"))
+    elementos_da_checkbox.push(new Elementos_da_checkbox("documentarios","Documentários"))
 
     cria_checkbox(div,elementos_da_checkbox)
 
@@ -32,9 +32,9 @@ const  cria_propriedas_de_cinema = div =>{
 
     const taxa_de_gosto = []
 
-    taxa_de_gosto.push("Um pouco, quem não curte um netflix")
+    taxa_de_gosto.push("Um pouco, quem não curte um netflix ?")
     taxa_de_gosto.push("Mais ou menos, assisto alguns filmes")
-    taxa_de_gosto.push("Muito, Vivo no cinema todas as quartas feiras")
+    taxa_de_gosto.push("Muito, vivo no cinema todas às quartas feiras")
 
     cria_checklist(div,"cinema_taxa_de_gosto",taxa_de_gosto)
 }
@@ -77,7 +77,7 @@ const  cria_propriedades_de_musica =div =>{
     cria_pergunta(div, "O quanto você gosta de escutar música")
 
     const taxa_de_gosto = []
-        taxa_de_gosto.push("Um pouco,mais quando to sem nada pra fazer")
+        taxa_de_gosto.push("Um pouco quando estou sem nada para fazer")
         taxa_de_gosto.push("Mais ou menos, tenho uma assinatura do spotfy")
         taxa_de_gosto.push("Muito, Vivo em shows")
 
@@ -98,8 +98,8 @@ const cria_propriedades_de_carro =div =>{
     cria_pergunta(div, "O quanto você gosta de Carros ?")
 
     const taxa_de_gosto = []
-        taxa_de_gosto.push("Um pouco,afinal ninguém gosta de andar de Ônibos")
-        taxa_de_gosto.push("Mais ou menos, mas gosto de da uma acelerada")
+        taxa_de_gosto.push("Um pouco,afinal ninguém gosta de andar de ônibus")
+        taxa_de_gosto.push("Mais ou menos,  gosto de dar uma acelerada")
         taxa_de_gosto.push("Muito, Vivo em track day")
 
     cria_checklist(div,"carros_taxa_de_gosto",taxa_de_gosto)
@@ -182,9 +182,11 @@ function adiciona_robbie() {
      hobbie.setAttribute("id", "hobbie" + contador.hobbie)
      
      div.appendChild(hobbie)
-     
-     cria_pergunta(hobbie,"Selecione um hobbie")
-     
+     if(contador.hobbie > 1 ){
+     cria_pergunta(hobbie,"Selecione outro hobbie")
+     }else {
+        cria_pergunta(hobbie,"Selecione um hobbie")
+     }
      
      const tipos_de_hobbies = remove_elementos_iguals(elementos_de_hobbies,["","Cinema","Música","Futebol","Videogame","Carros","Outros"])
       
