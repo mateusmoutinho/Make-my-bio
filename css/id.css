@@ -30,11 +30,8 @@ text-align: center;
    
 }
 #final{
-    position: absolute;
     margin: 0 auto;
     text-align: center;
     width: 500px;
-    background-color: blue;
     height: 200px;
-
 }
